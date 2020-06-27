@@ -7,7 +7,7 @@ const SmurfList = props => {
   console.log(props);
   useEffect(() => {
     props.getSmurfs();
-  }, [props]);
+  }, []);
   return (
     <div className="smurfContainer">
       {props.smurfs.length !== 0 &&
